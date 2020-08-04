@@ -1,0 +1,91 @@
+.background-primary {
+  background: #FF9944; }
+
+.background-primary_light {
+  background: #FFA65C; }
+
+.background-primary_light-2 {
+  background: #FFB577; }
+
+.background-primary_dark {
+  background: #FF8B2A; }
+
+.background-primary_dark-2 {
+  background: #FF7707; }
+
+.background-secondary-1 {
+  background: #FFBB44; }
+
+.background-secondary-1_light {
+  background: #FFC45C; }
+
+.background-secondary-1_light-2 {
+  background: #FFCE77; }
+
+.background-secondary-1_dark {
+  background: #FFB22A; }
+
+.background-secondary-1_dark-2 {
+  background: #FFA507; }
+
+.background-secondary-2 {
+  background: #FF5A44; }
+
+.background-secondary-2_light {
+  background: #FF6F5C; }
+
+.background-secondary-2_light-2 {
+  background: #FF8777; }
+
+.background-secondary-2_dark {
+  background: #FF432A; }
+
+.background-secondary-2_dark-2 {
+  background: #FF2407; }
+
+.color-primary {
+  color: #FF9944; }
+
+.color-primary_light {
+  color: #FFA65C; }
+
+.color-primary_light-2 {
+  color: #FFB577; }
+
+.color-primary_dark {
+  color: #FF8B2A; }
+
+.color-primary_dark-2 {
+  color: #FF7707; }
+
+.color-secondary-1 {
+  color: #FFBB44; }
+
+.color-secondary-1_light {
+  color: #FFC45C; }
+
+.color-secondary-1_light-2 {
+  color: #FFCE77; }
+
+.color-secondary-1_dark {
+  color: #FFB22A; }
+
+.color-secondary-1_dark-2 {
+  color: #FFA507; }
+
+.color-secondary-2 {
+  color: #FF5A44; }
+
+.color-secondary-2_light {
+  color: #FF6F5C; }
+
+.color-secondary-2_light-2 {
+  color: #FF8777; }
+
+.color-secondary-2_dark {
+  color: #FF432A; }
+
+.color-secondary-2_dark-2 {
+  color: #FF2407; }
+
+/*# sourceMappingURL=../map/vars/colors.css.map */

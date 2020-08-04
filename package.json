@@ -1,0 +1,17 @@
+{
+  "name": "anly",
+  "version": "1.0.0",
+  "description": "anly site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shevchuk Pavel (pavashev222@gmail.com)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

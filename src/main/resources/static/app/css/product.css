@@ -1,0 +1,14 @@
+.main-image img {
+  width: 100%; }
+
+.message {
+  width: fit-content;
+  margin: 10px 0; }
+  .message .delete-form {
+    float: right; }
+
+.child-message {
+  padding-left: 25px;
+  margin: 5px 0; }
+
+/*# sourceMappingURL=map/product.css.map */
