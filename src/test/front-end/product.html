@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>${title}</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> <!-- new -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/product.css" /> <!-- new -->
+
+</head>
+<body class="background-primary_light-2">
+    <div class="modal fade" id="modal-card" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCardTitle">Корзина</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="total" group="1"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                    <a href="/order.html"><button type="button" class="btn btn-custom-secondary-2">Оформить заказ</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-desired" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDesiredTitle">Желаемое</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-add-category" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-add-category-title">Добавить категорию</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add-category-form" action="#">
+                        <input type="text" name="name" placeholder="Название категории">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" form="add-category-form" class="btn btn-custom-secondary-2">Готово</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <nav id="top" class="core">
+                        <div class="container-lg">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="logo">
+                                    </div>
+                                </div>
+                                <div class="col search-col align-self-center">
+                                    <input class="search" type="search" placeholder="Поиск по сайту">
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="user-panel">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-user">
+                                                </i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Профиль</a>
+                                                <a class="dropdown-item" href="#">Выйти</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Панель администратора</a>
+                                                <a class="dropdown-item" data-toggle="modal" data-target="#modal-add-category" href="#">Добавить категорию</a>
+                                                <a class="dropdown-item" href="#">Добавить продукт</a>
+                                                <a class="dropdown-item" href="#">Пользователи</a>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#modal-desired">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#modal-card">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="contacts">
+                                        <ul>
+                                            <li>
+                                                <a href="tel:+380675361331">(067)-536-13-31</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="core categories-nav">
+                        <div class="container-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="categories">
+                                        <a class="category-link" href="#">Category 1</a>
+                                        <a class="category-link" href="#">Category 2</a>
+                                        <a class="category-link" href="#">Category 3</a>
+                                        <a class="category-link" href="#">Category 1</a>
+                                        <a class="category-link" href="#">Category 2</a>
+                                        <a class="category-link" href="#">Category 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <div class="main-container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5">
+                            <div class="images">
+                                <a href="../imgs/testImage.jpg" data-fancybox="gallery" class="big-img"><img src="../imgs/testImage.jpg" alt=""></a>
+                                <div class="images-small">
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+                                    <a href="../imgs/testImage.jpg" data-fancybox="gallery"><img src="../imgs/testImage.jpg" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="info">
+                                <h3 class="product-title">Название</h3>
+                                <div class="product-code">12345</div>
+                                <h5 class="product-price">500 грн</h5>
+                                <span class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi corporis delectus deleniti, dicta, dolorem ducimus et impedit non odio placeat possimus praesentium quibusdam repellendus sapiente soluta ut vel vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam at blanditiis commodi consequuntur cumque eum explicabo fuga necessitatibus non, obcaecati perspiciatis repellendus. Autem error molestias praesentium quasi sapiente vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque fuga odio voluptas! Dolorem eos esse in incidunt reprehenderit? Dignissimos magni maxime nam sapiente? Adipisci animi maiores nostrum reprehenderit velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo fugiat id maxime possimus quaerat qui saepe temporibus. Blanditiis enim id inventore laboriosam laborum nisi quo, voluptatibus. Doloribus eum, reiciendis!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col t-a-right">
+                            <button type="button" class="btn btn-lg btn-custom-secondary-1" data-dismiss="modal">Добавить в желаемое</button>
+                            <button type="button" class="btn btn-lg btn-custom-secondary-2">Купить</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="reviews">
+                                <h5>Отзывы</h5>
+                                <div class="review review-edit">
+                                    <div class="content-blocker unselectable">
+                                        <div class="opacity"></div>
+                                        <div class="content-blocker-body">
+                                            <div class="inner align-self-center">
+                                                <span>Авторизируйтесь чтобы оставить отзыв</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form action="#">
+                                        <textarea class="text" name="text" rows="5" placeholder="Введите сюда ваш отзыв"></textarea>
+                                        <div class="rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-sm btn-secondary mt-3 ml-0">Подтвердить</button>
+                                    </form>
+                                </div>
+                                <div class="review">
+                                    <div class="user-name">Admin</div>
+                                    <div class="special-text">Ответ администратора</div>
+                                    <div class="text">alsdjfl;asjdfl/jasdl;kdgjl;adsjkl;.fjakls;jfl;kasdlk;fjl;kasdjfl;jasdl;fjl;kadsdl;fjasd;ldfj;lasjdfl;ajs;ldf</div>
+                                </div>
+                                <div class="review">
+                                    <div class="user-name">Guest</div>
+                                    <div class="special-text">Ваш отзыв</div>
+                                    <div class="text">Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae, cumque delectus est ex explicabo id ipsa necessitatibus obcaecati possimus, quam quas repellendus voluptate. Aliquam enim iste officia quod ratione? sit amet, consectetur adipisicing elit. Accusamus aperiam aut consequuntur cum deleniti distinctio eius eos eveniet exercitationem id, magnam natus nesciunt, placeat provident qui rerum sed suscipit voluptas?</div>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-secondary">Ответить</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Удалить</button>
+                                </div>
+                                <div class="review">
+                                    <div class="user-name">User_228</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut consequuntur cum deleniti distinctio eius eos eveniet exercitationem id, magnam natus nesciunt, placeat provident qui rerum sed suscipit voluptas?</div>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-secondary">Ответить</button>
+
+                                    <div class="review review-child">
+                                        <div class="user-name">Admin</div>
+                                        <div class="special-text">Ответ администратора</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                                        <button type="button" class="btn btn-sm btn-secondary ml-0">Ответить</button>
+                                    </div>
+                                    <div class="review review-child">
+                                        <div class="user-name">User228</div>
+                                        <div class="text">Admin, Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                                        <button type="button" class="btn btn-sm btn-secondary ml-0">Ответить</button>
+                                    </div>
+                                    <div class="review review-child">
+                                        <div class="user-name">Nannik</div>
+                                        <div class="text">Admin, Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                                        <button type="button" class="btn btn-sm btn-secondary ml-0">Ответить</button>
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <div class="user-name">Nannik</div>
+                                    <div class="text">onem id, magnam natus nesciunt, placeat provident qui rerum sed suscipit voluptas?</div>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <button type="button" class="btn btn-sm btn-secondary">Ответить</button>
+
+                                    <div class="review review-child">
+                                        <div class="user-name">Nannik</div>
+                                        <div class="text">Admin, Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                                        <button type="button" class="btn btn-sm btn-secondary ml-0">Ответить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pb-3">
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <nav>
+                        <div class="container-lg pb-0">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="content">
+                                        <div class="social">
+                                            <h5>Мы в соц. сетях</h5>
+                                            <a href="https://instagram.com/anlyua?igshid=aokmziyk77td"><i class="fab fa-instagram-square"></i></a>
+                                            <a href="https://www.facebook.com/anlylab/"><i class="fab fa-facebook-square"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/libs/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> <!-- new -->
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

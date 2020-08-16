@@ -1,0 +1,76 @@
+.product {
+  display: inline-block;
+  width: 300px;
+  height: 530px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid $color-secondary-1-3;
+  background: $color-secondary-1-0;
+
+  font-family: 'Noto Sans JP', sans-serif;
+
+  .head {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-secondary-2-2;
+
+    a {
+      color: black;
+    }
+
+    .name {
+      font-weight: 900;
+      display: inline-block;
+      width: calc(100% - 60px);
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .toDesired {
+      display: inline-block;
+      width: 50px;
+      font-size: 18px;
+    }
+  }
+
+  .img-container {
+    width: 100%;
+    height: 169px;
+    margin: 10px 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  .price {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+    color: $color-secondary-2-3;
+    padding-bottom: 10px;
+  }
+
+  .description {
+    width: 100%;
+    height: 180px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .toCard {
+    margin: 0 auto 10px auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: $color-secondary-2-2;
+
+  }
+}

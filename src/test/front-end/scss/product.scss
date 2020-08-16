@@ -1,0 +1,135 @@
+@import "vars/colors";
+
+.images {
+  width: 100%;
+
+  a {
+    position: relative;
+    width: calc(25% - 5px);
+    padding-bottom: calc(25% - 5px);
+    float: left;
+    height: 0;
+
+    &.big-img {
+      width: 100%;
+      padding-bottom: 100%;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &-small {
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+
+    a {
+      margin: 5px 5px 0 0;
+    }
+  }
+}
+
+.info {
+  font-family: 'Noto Sans JP', sans-serif;
+
+  .product {
+
+    &-title {
+      width: 100%;
+      font-weight: 500;
+    }
+
+    &-code {
+      width: 100%;
+      font-size: 14px;
+
+      &::before {
+        content: "Код товара: ";
+      }
+    }
+
+    &-price {
+      color: $color-secondary-2-4;
+      margin: 20px 0;
+      width: 100%;
+
+      &::before {
+        content: "Цена: ";
+      }
+    }
+  }
+}
+
+.reviews {
+  width: 100%;
+
+  .review {
+    position: relative;
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: 100%;
+    background: $color-secondary-1-0;
+    border-radius: 10px;
+
+    &-child {
+      width: calc(100% - 70px);
+      margin-top: 10px;
+      margin-left: 35px;
+      padding: 5px 0;
+      border-bottom: 1px solid #6c747d;
+    }
+
+    &-edit {
+      textarea {
+        overflow: auto;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+
+    .content-blocker .opacity {
+      border-radius: 10px;
+    }
+
+    .user-name {
+      width: 100%;
+      height: 37px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+    }
+
+    .text {
+      width: 100%;
+      padding-left: 10px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .rate {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .special-text {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      width: fit-content;
+      height: fit-content;
+      padding: 3px;
+      color: white;
+      cursor: default;
+      background: $color-secondary-2-0;
+      border-radius: 5px;
+    }
+  }
+}

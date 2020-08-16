@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.background-primary {
+  background: #FF9944; }
+
+.background-primary_light {
+  background: #FFA65C; }
+
+.background-primary_light-2 {
+  background: #FFB577; }
+
+.background-primary_dark {
+  background: #FF8B2A; }
+
+.background-primary_dark-2 {
+  background: #FF7707; }
+
+.background-secondary-1 {
+  background: #FFBB44; }
+
+.background-secondary-1_light {
+  background: #FFC45C; }
+
+.background-secondary-1_light-2 {
+  background: #FFCE77; }
+
+.background-secondary-1_dark {
+  background: #FFB22A; }
+
+.background-secondary-1_dark-2 {
+  background: #FFA507; }
+
+.background-secondary-2 {
+  background: #FF5A44; }
+
+.background-secondary-2_light {
+  background: #FF6F5C; }
+
+.background-secondary-2_light-2 {
+  background: #FF8777; }
+
+.background-secondary-2_dark {
+  background: #FF432A; }
+
+.background-secondary-2_dark-2 {
+  background: #FF2407; }
+
+.color-primary {
+  color: #FF9944; }
+
+.color-primary_light {
+  color: #FFA65C; }
+
+.color-primary_light-2 {
+  color: #FFB577; }
+
+.color-primary_dark {
+  color: #FF8B2A; }
+
+.color-primary_dark-2 {
+  color: #FF7707; }
+
+.color-secondary-1 {
+  color: #FFBB44; }
+
+.color-secondary-1_light {
+  color: #FFC45C; }
+
+.color-secondary-1_light-2 {
+  color: #FFCE77; }
+
+.color-secondary-1_dark {
+  color: #FFB22A; }
+
+.color-secondary-1_dark-2 {
+  color: #FFA507; }
+
+.color-secondary-2 {
+  color: #FF5A44; }
+
+.color-secondary-2_light {
+  color: #FF6F5C; }
+
+.color-secondary-2_light-2 {
+  color: #FF8777; }
+
+.color-secondary-2_dark {
+  color: #FF432A; }
+
+.color-secondary-2_dark-2 {
+  color: #FF2407; }
+
+.images {
+  width: 100%; }
+  .images a {
+    position: relative;
+    width: calc(25% - 5px);
+    padding-bottom: calc(25% - 5px);
+    float: left;
+    height: 0; }
+    .images a.big-img {
+      width: 100%;
+      padding-bottom: 100%; }
+    .images a img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0; }
+  .images-small {
+    overflow: auto;
+    text-align: center;
+    width: 100%; }
+    .images-small a {
+      margin: 5px 5px 0 0; }
+
+.info {
+  font-family: 'Noto Sans JP', sans-serif; }
+  .info .product-title {
+    width: 100%;
+    font-weight: 500; }
+  .info .product-code {
+    width: 100%;
+    font-size: 14px; }
+    .info .product-code::before {
+      content: "Код товара: "; }
+  .info .product-price {
+    color: #FF2407;
+    margin: 20px 0;
+    width: 100%; }
+    .info .product-price::before {
+      content: "Цена: "; }
+
+.reviews {
+  width: 100%; }
+  .reviews .review {
+    position: relative;
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: 100%;
+    background: #FFBB44;
+    border-radius: 10px; }
+    .reviews .review-child {
+      width: calc(100% - 70px);
+      margin-top: 10px;
+      margin-left: 35px;
+      padding: 5px 0;
+      border-bottom: 1px solid #6c747d; }
+    .reviews .review-edit textarea {
+      overflow: auto;
+      resize: none;
+      border: none;
+      border-radius: 5px; }
+    .reviews .review .content-blocker .opacity {
+      border-radius: 10px; }
+    .reviews .review .user-name {
+      width: 100%;
+      height: 37px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 19px;
+      font-weight: 400; }
+    .reviews .review .text {
+      width: 100%;
+      padding-left: 10px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      font-weight: 300; }
+    .reviews .review .rate {
+      display: inline-block;
+      margin-top: 10px; }
+    .reviews .review .special-text {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      width: fit-content;
+      height: fit-content;
+      padding: 3px;
+      color: white;
+      cursor: default;
+      background: #FF5A44;
+      border-radius: 5px; }
+
+/*# sourceMappingURL=map/product.css.map */

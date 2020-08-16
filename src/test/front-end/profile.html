@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+
+</head>
+<body class="background-primary_light-2">
+    <div class="modal fade" id="modal-card" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCardTitle">Корзина</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear" group="1">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right unselectable">
+                            <div class="select-num">
+                                <div class="decrement">
+                                    <i class="fas fa-minus-square"></i>
+                                </div>
+                                <div class="select-num-val">1</div>
+                                <div class="increment">
+                                    <i class="fas fa-plus-square"></i>
+                                </div>
+                            </div>
+                            <div class="product-linear-price" price="100">100 грн</div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="total" group="1"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                    <a href="/order.html"><button type="button" class="btn btn-custom-secondary-2">Оформить заказ</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-desired" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDesiredTitle">Желаемое</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="product-linear">
+                        <div class="product-linear-title">
+                            <a href="#">Название</a>
+                        </div>
+                        <div class="float-right">
+                            <div class="product-linear-price">123 грн</div>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-add-category" tabindex="-1" role="dialog" aria-labelledby="example-modal-center-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-add-category-title">Добавить категорию</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="add-category-form" action="#">
+                        <input type="text" name="name" placeholder="Название категории">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-secondary-1" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" form="add-category-form" class="btn btn-custom-secondary-2">Готово</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <nav id="top" class="core">
+                        <div class="container-lg">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="logo">
+                                    </div>
+                                </div>
+                                <div class="col search-col align-self-center">
+                                    <input class="search" type="search" placeholder="Поиск по сайту">
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="user-panel">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-user">
+                                                </i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Профиль</a>
+                                                <a class="dropdown-item" href="#">Выйти</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Панель администратора</a>
+                                                <a class="dropdown-item" data-toggle="modal" data-target="#modal-add-category" href="#">Добавить категорию</a>
+                                                <a class="dropdown-item" href="#">Добавить продукт</a>
+                                                <a class="dropdown-item" href="#">Пользователи</a>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#modal-desired">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#modal-card">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="contacts">
+                                        <ul>
+                                            <li>
+                                                <a href="tel:+380675361331">(067)-536-13-31</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="core categories-nav">
+                        <div class="container-lg">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="categories">
+                                        <a class="category-link" href="#">Category 1</a>
+                                        <a class="category-link" href="#">Category 2</a>
+                                        <a class="category-link" href="#">Category 3</a>
+                                        <a class="category-link" href="#">Category 1</a>
+                                        <a class="category-link" href="#">Category 2</a>
+                                        <a class="category-link" href="#">Category 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col core">
+                <h4>Профиль</h4>
+                <div class="group">
+                    <div class="bg-dark title">Имя</div>
+                    <div class="dynamic-text-input">
+                        <input type="text" value="Your name" disabled required>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="button" class="btn btn-custom-secondary-2 ml-3" data-dismiss="edit">Редактировать</button>
+                    <button type="submit" class="btn btn-custom-secondary-2 ml-3 d-none" data-dismiss="save">Сохранить</button>
+                </div>
+                <div class="group">
+                    <div class="bg-dark title">Почта</div>
+                    <div class="dynamic-text-input">
+                        <input type="text" value="pavashev222@gmail.com" disabled required>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="button" class="btn btn-custom-secondary-2 ml-3" data-dismiss="edit">Редактировать</button>
+                    <button type="submit" class="btn btn-custom-secondary-2 ml-3 d-none" data-dismiss="edit">Сохранить</button>
+                </div>
+                <div class="group">
+                    <div class="bg-dark title">Номер телефона</div>
+                    <div class="dynamic-text-input">
+                        <input type="text" value="0689645069" disabled required>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="button" class="btn btn-custom-secondary-2 ml-3" data-dismiss="edit">Редактировать</button>
+                    <button type="submit" class="btn btn-custom-secondary-2 ml-3 d-none" data-dismiss="edit">Сохранить</button>
+                </div>
+                <div class="group">
+                    <div class="bg-dark title">Пароль</div>
+                    <div class="dynamic-text-input">
+                        <input type="password" value="дфдфдфд" disabled required>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="button" class="btn btn-custom-secondary-2 ml-3" data-dismiss="edit">Редактировать</button>
+                    <button type="submit" class="btn btn-custom-secondary-2 ml-3 d-none" data-dismiss="edit">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pb-3">
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <nav class="core">
+                        <div class="container-lg pb-0">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="content">
+                                        <div class="social">
+                                            <h5>Мы в соц. сетях</h5>
+                                            <a href="https://instagram.com/anlyua?igshid=aokmziyk77td"><i class="fab fa-instagram-square"></i></a>
+                                            <a href="https://www.facebook.com/anlylab/"><i class="fab fa-facebook-square"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/libs/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import "../vars/colors";
+
+.btn {
+  padding: 3px 7px;
+  margin: 5px;
+}
+
+.btn-custom {
+  color: black;
+  background: $color-primary-4;
+
+  &-secondary-2 {
+    background: $color-secondary-2-3;
+    color: white;
+  }
+
+  &-secondary-1 {
+    background: $color-secondary-1-3;
+    color: white;
+  }
+
+  i {
+    padding: 10px;
+  }
+}
+
+.btn-group {
+  .dropdown-menu {
+    border: 1px solid $color-secondary-1-4;
+    background: $color-secondary-1-3;
+
+    .dropdown-item {
+      font-weight: 400;
+      font-family: 'Noto Sans JP', sans-serif;
+
+      &:hover {
+        background: $color-secondary-1-1;
+      }
+
+      &:active {
+        background: $color-secondary-2-0;
+      }
+    }
+
+    .dropdown-divider {
+      border: 1px solid $color-secondary-2-1;
+    }
+  }
+}
+
+.container {
+  padding-bottom: 25px;
+
+  &-fluid {
+    padding-bottom: 25px;
+  }
+
+  &-lg {
+    padding-bottom: 25px;
+  }
+
+  &-md {
+    padding-bottom: 25px;
+  }
+
+  &-sm {
+    padding-bottom: 25px;
+  }
+}
+
+.modal-content {
+  background: $color-primary-3;
+}
+
+.modal-header {
+  border-bottom: 1px solid $color-secondary-2-0;
+}
+
+.modal-footer {
+  border-top: 1px solid $color-secondary-2-0;
+}
+
+.close {
+  text-shadow: none;
+}

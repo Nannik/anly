@@ -1,0 +1,1 @@
+{"version":3,"file":"../login.css","sources":["login.scss"],"sourcesContent":["form {\n  width: fit-content;\n  margin: 0 auto;\n  padding: 10px;\n  text-align: center;\n}"],"names":[],"mappings":"AAAA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,WAAW;EAClB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM,GACnB"}
